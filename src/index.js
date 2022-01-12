@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-
+  <Screen/>
   </React.StrictMode>,
   document.getElementById('root')
 );
