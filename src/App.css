@@ -36,3 +36,74 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+  color: white;
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 270px;
+  margin-top: 150px;
+}
+.header__draw {
+  border: 3px solid #000;
+  text-align: center;
+  width: calc(33% /2);
+  background-color: rgba(0, 0, 0, .4);
+}
+.header__discord {
+  border: 3px solid #000;
+  text-align: center;
+  width: calc(33% /2);
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 150px;
+  height: 270px;
+  padding: 50px;
+  }
+.footer__cards--one {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards--two {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards--three {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards--four {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards--five {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}

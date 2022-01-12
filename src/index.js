@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Table from './Table';
+import Screen from './Screen';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-<Screen/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -28,68 +30,7 @@ ReactDOM.render(
 
 
 
-function Card(props){
 
-  return(
-    <div className={props.class_name} backgroundImage={props.image}><p>{props.class_name}</p></div>
-
-  )
-}
-
-class Table extends React.Component {
-
-  renderCard(data, i) {
-    return (
-      <Card
-      value = {data}
-      class_name= {"footer__cards--" + data}
-      image={this.props.cards[i]}
-      //onClick={() => this.props.onClick(data)}
-      />
-    );
-  }
-
-
-  render() {
-    return (
-      <div class="footer__cards">
-          {this.renderCard("one", 0)}
-          {this.renderCard("two", 1)}
-          {this.renderCard("three", 2)}
-          {this.renderCard("four", 3)}
-          {this.renderCard("five", 4)}
-          </div>
-
-    );
-  }
-}
-
-
-class Screen extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      //ANY AND ALL INITIALIZATIONS OF DATA GO HERE
-      cards: Array(5).fill(null)
-    };
-
-  }
-  handleClick(i){
-    //Do something if cards[i] is clicked
-  }
-render(){
-  return(
-    <footer class="footer">
-
-    <App/>
-    <Table/>
-  </footer>
-  );
-}
-
-
-
-}
 
 
 
