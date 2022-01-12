@@ -19,11 +19,11 @@ function App() {
             </header>
             <footer class="footer">
               <div class="footer__cards">
-                <div class="footer__cards--one" id=""></div>
-                <div class="footer__cards--two" id=""></div>
-                <div class="footer__cards--three" id=""></div>
-                <div class="footer__cards--four" id=""></div>
-                <div class="footer__cards--five" id=""></div>
+                <div class="footer__cards--one" style={cardStyle}></div>
+                <div class="footer__cards--two" style={cardStyle}></div>
+                <div class="footer__cards--three" style={cardStyle}></div>
+                <div class="footer__cards--four" style={cardStyle}></div>
+                <div class="footer__cards--five" style={cardStyle}></div>
               </div>
             </footer>
           </main>
