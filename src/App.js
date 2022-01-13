@@ -2,21 +2,14 @@
 import './App.css';
 
 function App() {
-  return (
-      <html lang="en">
+return (
 
-        <body class="container">
-          <main class="wrapper">
-            <header class="header">
-              <div class="header__draw"></div>
-              <div class="header__discord"></div>
-            </header>
+<div className="header">
+  <div className="draw"></div>
+  <div className="discord"></div>
+</div>
 
-          </main>
-        </body>
-
-      </html>
-  );
+);
 }
 
 export default App;
