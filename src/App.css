@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.container {
+  color: white;
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_960_720.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 270px;
+  margin-top: 150px;
+}
+.header__draw {
+  border: 3px solid #000;
+  text-align: center;
+  width: calc(33% /2);
+  background-color: rgba(0, 0, 0, .4);
+}
+.header__discord {
+  border: 3px solid #000;
+  text-align: center;
+  width: calc(33% /2);
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 150px;
+  height: 270px;
+  padding: 50px;
+  }
+.footer__cards--one {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards--two {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards--three {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards--four {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}
+.footer__cards--five {
+  border: 3px solid #000;
+  width: calc(90% /5);
+  text-align: center;
+  background-color: rgba(0, 0, 0, .4);
+}
