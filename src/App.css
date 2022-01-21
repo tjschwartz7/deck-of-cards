@@ -38,72 +38,86 @@
 }
 
 
-.container {
-  color: white;
-  background-image: url(https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_960_720.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.wrapper {
-}
-.header {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 40px;
-  margin-right: 40px;
-  height: 270px;
-  margin-top: 150px;
-}
-.header__draw {
-  border: 3px solid #000;
-  text-align: center;
-  width: calc(33% /2);
-  background-color: rgba(0, 0, 0, .4);
-}
-.header__discord {
-  border: 3px solid #000;
-  text-align: center;
-  width: calc(33% /2);
-  background-color: rgba(0, 0, 0, .4);
-}
-.footer__cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 150px;
-  height: 270px;
-  padding: 50px;
+body {
+    color: white;
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-.footer__cards--one {
-  border: 3px solid #000;
-  width: calc(90% /5);
-  text-align: center;
-  background-color: rgba(0, 0, 0, .4);
-}
-.footer__cards--two {
-  border: 3px solid #000;
-  width: calc(90% /5);
-  text-align: center;
-  background-color: rgba(0, 0, 0, .4);
-}
-.footer__cards--three {
-  border: 3px solid #000;
-  width: calc(90% /5);
-  text-align: center;
-  background-color: rgba(0, 0, 0, .4);
-}
-.footer__cards--four {
-  border: 3px solid #000;
-  width: calc(90% /5);
-  text-align: center;
-  background-color: rgba(0, 0, 0, .4);
-}
-.footer__cards--five {
-  border: 3px solid #000;
-  width: calc(90% /5);
-  text-align: center;
-  background-color: rgba(0, 0, 0, .4);
-}
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+  }
+  .header > div {
+    border: 4px solid #000;
+    padding: 80px;
+    cursor: pointer;
+  }
+  
+  .header > div:hover {
+    transition: .2s;
+    border: 4px solid white;
+    color: black;
+    box-shadow: 0px 0px 20px white;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .header {
+      flex-direction: column;
+      margin: 30px auto;
+    }
+    .header > div {
+      margin-bottom: 5px;
+    }
+  }
+
+  .footer__cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+  }
+  .footer__cards > div {
+    border: 4px solid #000;
+    padding: 95px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+
+  .footer__cards > div:hover {
+    transition: .2s;
+    border: 4px solid white;
+    color: black;
+    box-shadow: 0px 0px 20px white;
+  }
+
+
+  @media screen and (max-width: 1100px) {
+    .footer__cards {
+      flex-direction: column;
+      width: 250px;
+      margin: auto;
+    }
+    body {
+      background-image:url(https://cdn.pixabay.com/photo/2017/08/01/20/20/nebula-2567749_960_720.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+  }
+
