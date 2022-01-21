@@ -46,7 +46,7 @@ export default App;
 function Card(props){
     {console.log(props.image)}
   return(
-    <img className={props.class_name} src={(props.image==null) ? "" : props.image.url} onClick={props.onClick}></img>
+    <img className={props.class_name} src={(props.image==null) ? "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg1.pnghut.com%2F19%2F5%2F1%2FESHtTpwf0x%2Fphotography-stock-royalty-payment-question-mark-symbol.jpg&f=1&nofb=1" : props.image.url} onClick={props.onClick}></img>
 
   )
 }
@@ -63,13 +63,18 @@ class Table extends React.Component {
 
     };
   }
+
+
   handleClick(i){
     //Do something if cards[i] is clicked
-    {this.renderCard("one", i)}
-    {console.log(69)}
+    {this.props.imageArr[i] = null}
+    {this.render()}
+    {console.log(25)}
 
   }
   renderCard(data, i) {
+        {console.log(this.props.imageArr == null ? null : this.props.imageArr[i])}
+        {console.log(24)}
     return (
       <Card
       class_name= {"footer__cards--"+data}
@@ -81,6 +86,7 @@ class Table extends React.Component {
 
 
   render() {
+
     return (
       <div className="footer__cards">
       {this.renderCard("one", 0)}
