@@ -84,11 +84,13 @@ body {
       flex-direction: column;
       margin: auto;
     }
+
     .header__draw {
       margin-bottom: 10px;
       max-width: 50%;
     }
   }
+
 
   .footer__cards {
     display: flex;
@@ -112,6 +114,7 @@ body {
     color: black;
     box-shadow: 0px 0px 20px white;
   }
+
 
 
   @media screen and (max-width: 1100px) {
