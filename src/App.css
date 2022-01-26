@@ -87,7 +87,7 @@ body {
 
     .header__draw {
       margin-bottom: 10px;
-      max-width: 50%;
+      max-width: 13.5vw;
     }
   }
 
@@ -102,8 +102,10 @@ body {
     border: 4px solid #000;
     padding: 95px;
     margin-bottom: 10px;
-    max-width: calc(100% / 5);
-    max-height: 50%;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 15vw;
+    max-height: 13vh;
     cursor: pointer;
   }
 
@@ -125,8 +127,8 @@ body {
     }
 
     .footer__cards > div {
-	    max-width: 50%;
-	    height: calc(100% / 5);
+	    max-width: 12.5vw;
+	    max-height: 13vh;
 	    margin-bottom: 5px;
     }
 
