@@ -64,15 +64,16 @@ body {
     margin: 10%;
   }
 
-  .header > div {
+  .header__draw {
     border: 4px solid #000;
     padding: 80px;
     cursor: pointer;
   }
   
-  .header > div:hover {
+  .header__draw:hover {
     transition: .2s;
     border: 4px solid white;
+    background: white;
     color: black;
     box-shadow: 0px 0px 20px white;
   }
@@ -81,23 +82,28 @@ body {
   @media screen and (max-width: 700px) {
     .header {
       flex-direction: column;
-      margin: 30px auto;
+      margin: auto;
     }
-    .header > div {
-      margin-bottom: 5px;
+
+    .header__draw {
+      margin-bottom: 10px;
+      max-width: 50%;
     }
   }
+
 
   .footer__cards {
     display: flex;
     justify-content: space-around;
-    margin: 10%;
   }
+
 
   .footer__cards > div {
     border: 4px solid #000;
     padding: 95px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    max-width: calc(100% / 5);
+    max-height: 50%;
     cursor: pointer;
   }
 
@@ -110,12 +116,20 @@ body {
   }
 
 
+
   @media screen and (max-width: 1100px) {
     .footer__cards {
       flex-direction: column;
-      width: 250px;
+      align-items: center;
       margin: auto;
     }
+
+    .footer__cards > div {
+	    max-width: 50%;
+	    height: calc(100% / 5);
+	    margin-bottom: 5px;
+    }
+
 
     body {
       background-image:url(https://cdn.pixabay.com/photo/2017/08/01/20/20/nebula-2567749_960_720.jpg);
