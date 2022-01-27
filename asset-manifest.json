@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/deck-of-cards/static/css/main.d0bf23a1.css",
+    "main.css": "/deck-of-cards/static/css/main.6289bcda.css",
     "main.js": "/deck-of-cards/static/js/main.e60753bb.js",
     "static/js/787.65a0c9de.chunk.js": "/deck-of-cards/static/js/787.65a0c9de.chunk.js",
     "index.html": "/deck-of-cards/index.html",
-    "main.d0bf23a1.css.map": "/deck-of-cards/static/css/main.d0bf23a1.css.map",
+    "main.6289bcda.css.map": "/deck-of-cards/static/css/main.6289bcda.css.map",
     "main.e60753bb.js.map": "/deck-of-cards/static/js/main.e60753bb.js.map",
     "787.65a0c9de.chunk.js.map": "/deck-of-cards/static/js/787.65a0c9de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0bf23a1.css",
+    "static/css/main.6289bcda.css",
     "static/js/main.e60753bb.js"
   ]
 }
